@@ -1,4 +1,3 @@
-// src/pages/Services.tsx
 import { Card } from "../components/ui/Card";
 import { 
   Stethoscope, Heart, Baby, Brain, Eye, Bone, 

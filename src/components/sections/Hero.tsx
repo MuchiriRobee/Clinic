@@ -1,4 +1,3 @@
-// src/components/sections/Hero.tsx
 import { Button } from "../ui/Button";
 import { Link } from "react-router-dom";
 
@@ -7,13 +6,11 @@ export const Hero = () => {
     <section
       className="relative bg-cover bg-center bg-no-repeat py-20 text-white"
       style={{
-        backgroundImage: "url('/images/hero/hospitalbeds.jpg')", // ← put your image in public/hero.jpg
+        backgroundImage: "url('/images/hero/hospitalbeds.jpg')", 
       }}
     >
-      {/* Dark overlay – adjust opacity with the alpha value (0.5 = 50%) */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content */}
       <div className="relative container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           Welcome to Teach2Give Clinic

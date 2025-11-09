@@ -1,4 +1,3 @@
-// src/pages/About.tsx
 import { Card } from "../components/ui/Card";
 import { Stethoscope, Heart, Users, Award } from "lucide-react";
 
@@ -30,7 +29,6 @@ export default function About() {
 
   return (
     <div className="container mx-auto px-4 py-16 space-y-20">
-      {/* Hero Section */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">About Teach2Give Clinic</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -39,7 +37,6 @@ export default function About() {
         </p>
       </section>
 
-      {/* Mission & Vision */}
       <section className="grid md:grid-cols-2 gap-8">
         <Card className="p-8">
           <h2 className="text-2xl font-bold text-primary mb-4">Our Mission</h2>
@@ -57,7 +54,6 @@ export default function About() {
         </Card>
       </section>
 
-      {/* Stats Section */}
       <section className="bg-gradient-to-r from-blue-50 to-purple-50 py-12 rounded-2xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, i) => (
@@ -70,7 +66,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Intro Section */}
       <section className="text-center">
         <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-12">

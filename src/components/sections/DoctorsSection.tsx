@@ -1,4 +1,3 @@
-// src/components/sections/DoctorsSection.tsx
 import { Card } from "../ui/Card";
 
 const doctors = [
@@ -6,7 +5,7 @@ const doctors = [
     name: "Dr. Liz Mwikali",
     specialty: "Cardiologist",
     exp: "15+ years",
-    image: "/images/doctors/doc1.jpeg", // 👈 path to image
+    image: "/images/doctors/doc1.jpeg", 
   },
   {
     name: "Dr. Luke Obwoge",
@@ -34,7 +33,6 @@ export const DoctorsSection = () => {
               key={i}
               className="text-center p-6 shadow-lg rounded-2xl bg-white hover:shadow-xl transition-all duration-300"
             >
-              {/* Doctor Image */}
               <div className="flex justify-center mb-4">
                 <img
                   src={doc.image}
@@ -42,7 +40,6 @@ export const DoctorsSection = () => {
                 />
               </div>
 
-              {/* Doctor Details */}
               <h3 className="text-xl font-semibold text-gray-800">{doc.name}</h3>
               <p className="text-primary font-medium">{doc.specialty}</p>
               <p className="text-sm text-gray-600">{doc.exp} experience</p>

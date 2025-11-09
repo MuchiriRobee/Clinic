@@ -1,4 +1,3 @@
-// src/pages/Doctors.tsx
 import { Card } from "../components/ui/Card";
 import { Mail, Phone, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
