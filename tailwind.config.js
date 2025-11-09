@@ -17,6 +17,15 @@ export default {
         primary: "#1D4ED8",
         secondary: "#9333EA",
       },
+      animation: {
+      "slide-in": "slideIn 0.3s ease-out",
+    },
+    keyframes: {
+      slideIn: {
+        "0%": { transform: "translateY(-100%)" },
+        "100%": { transform: "translateY(0)" },
+      },
+    },
     },
   },
   plugins: [],
