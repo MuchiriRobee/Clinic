@@ -32,7 +32,7 @@ export default function About() {
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">About Teach2Give Clinic</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Established in 2025, we are a leading healthcare provider committed to excellence, 
+          Established in 2005, we are a leading healthcare provider committed to excellence, 
           compassion, and innovation in patient care.
         </p>
       </section>
