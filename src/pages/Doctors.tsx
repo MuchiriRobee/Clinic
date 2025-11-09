@@ -1,6 +1,8 @@
 // src/pages/Doctors.tsx
 import { Card } from "../components/ui/Card";
 import { Mail, Phone, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 interface Doctor {
   name: string;
@@ -89,11 +91,12 @@ export default function Doctors() {
                     <a href={`tel:${doc.phone}`} className="hover:text-primary">{doc.phone}</a>
                   </p>
                 </div>
-
+            <Link to="/contact">
                 <button className="mt-6 w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-blue-800 transition flex items-center justify-center gap-2">
                   <Calendar className="w-4 h-4" />
                   Book Appointment
                 </button>
+                </Link>
               </div>
             </div>
           </Card>
