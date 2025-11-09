@@ -47,12 +47,14 @@ export default function Contact() {
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           className="mb-4"
         />
-        <textarea
+        
+          <Input
           placeholder="Your Message"
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           className="w-full p-4 border rounded-lg mb-6 h-32"
-        />
+          />
+        
         <Button type="submit" className="w-full">
           Send Message
         </Button>
