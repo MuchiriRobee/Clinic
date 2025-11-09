@@ -3,15 +3,21 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,tsx,jsx}",
+  ],
+  safelist: [
+    // Add these to keep placeholder styles
+    {
+      pattern: /placeholder-/,
+    },
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#1D4ED8",   // blue-700
-        secondary: "#9333EA", // purple-600
+        primary: "#1D4ED8",
+        secondary: "#9333EA",
       },
     },
   },
   plugins: [],
-}
+};
