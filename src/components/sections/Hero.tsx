@@ -27,7 +27,7 @@ export const Hero = () => {
           <Link to="/about">
             <Button
               variant="outline"
-              className="bg-transparent text-white border-white hover:bg-white hover:text-blue-800"
+              className="bg-transparent text-white border-white hover:bg-white/20 hover:-translate-y-0.5   hover:text-blue-800"
             >
               Learn More
             </Button>
