@@ -42,7 +42,7 @@ export default function Services() {
           Need a service not listed? <strong>We offer customized care plans.</strong>
         </p>
         <a href="/contact">
-          <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+          <button className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-green-500 transition">
             Book Consultation
           </button>
         </a>

@@ -91,7 +91,7 @@ export default function Doctors() {
                   </p>
                 </div>
             <Link to="/contact">
-                <button className="mt-6 w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-blue-800 transition flex items-center justify-center gap-2">
+                <button className="mt-6 w-full bg-primary text-white py-2 rounded-lg font-medium hover:bg-green-500 transition flex items-center justify-center gap-2">
                   <Calendar className="w-4 h-4" />
                   Book Appointment
                 </button>

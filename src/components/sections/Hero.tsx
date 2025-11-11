@@ -21,7 +21,7 @@ export const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/contact">
-            <Button>Book Appointment</Button>
+            <Button className="hover:bg-green-500">Book Appointment</Button>
           </Link>
 
           <Link to="/about">
