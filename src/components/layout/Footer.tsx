@@ -39,7 +39,7 @@ export default function Footer() {
                                   rel="noopener noreferrer"
                                   className="text-blue-600 hover:underline"
                               >
-                                  Dekut, Kimathi, Nyeri, Kenya
+                                  Kimathi, Nyeri, Kenya
                               </a>
                           </p>
 

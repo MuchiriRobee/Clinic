@@ -12,12 +12,12 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Welcome to Teach2Give Clinic
-        </h1>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Providing compassionate, high-quality healthcare for you and your family.
-        </p>
+<h1 className="text-4xl md:text-6xl font-bold mb-6 rainbow-text">
+  Welcome to Teach2Give Clinic
+</h1>
+<p className="text-xl mb-8 max-w-2xl mx-auto rainbow-text-slow">
+  Providing compassionate, high-quality healthcare for you and your family.
+</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/contact">
