@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import { Toaster } from "sonner";
 import { useAuth } from "./hooks/useAuth";
 import AdminPage from "./pages/AdminPage";
+import type { JSX } from "react";
 
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated } = useAuth();
