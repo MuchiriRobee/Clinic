@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
@@ -7,7 +7,13 @@ import Services from "./pages/Services";
 import Doctors from "./pages/Doctors";
 import Contact from "./pages/Contact";
 import { Toaster } from "sonner";
+import { useAuth } from "./hooks/useAuth";
+import AdminPage from "./pages/AdminPage";
 
+const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+  const { isAuthenticated } = useAuth();
+  return isAuthenticated ? children : <Navigate to="/" />;
+};
 
 function App() {
   return (
@@ -21,6 +27,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
           </Routes>
         </main>
         <Footer />

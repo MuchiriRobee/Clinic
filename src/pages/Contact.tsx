@@ -24,7 +24,17 @@ export default function Contact() {
         </p>
       </div>
     );
+    const newMessage = {
+  id: Date.now().toString(),
+  name: form.name,
+  email: form.email,
+  message: form.message,
+  timestamp: new Date().toISOString(),
+};
 
+const existing = JSON.parse(localStorage.getItem("contactMessages") || "[]");
+existing.push(newMessage);
+localStorage.setItem("contactMessages", JSON.stringify(existing));
     // Reset form
     setForm({ name: "", email: "", message: "" });
   };
